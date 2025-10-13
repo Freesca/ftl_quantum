@@ -79,6 +79,7 @@ def main():
     #argument to make the code run on IBM Quantum computers
     parser.add_argument("--ibm", action="store_true", help="Run on IBM Quantum")
     parser.add_argument("--shots", type=int, default=500, help="Number of shots for the simulation")
+    parser.add_argument("--n", type=int, default=3, help="Number of bits arguments of the function")
     args = parser.parse_args()
 
     qcs = [
